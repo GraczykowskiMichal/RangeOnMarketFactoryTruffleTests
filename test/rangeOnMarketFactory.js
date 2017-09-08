@@ -13,7 +13,7 @@ contract('RangeOnMarketFactory', function(accounts) {
         })
     });
 
-    it("should return 0 for a not set key", function(done) {
+    it('should return 0 for a not set key', function(done) {
         var notSetKey = 555;
 
         contract.get(notSetKey).then(function(value) {
@@ -22,7 +22,7 @@ contract('RangeOnMarketFactory', function(accounts) {
         });
     });
 
-    it("should return value previously set for key", function(done) {
+    it('should return value previously set for key', function(done) {
         var key = 'key';
         var value = 'value';
 
@@ -34,7 +34,7 @@ contract('RangeOnMarketFactory', function(accounts) {
         });
     });
 
-    it("should return all key-value pairs", function(done) {
+    it('should return all key-value pairs', function(done) {
         var key1 = 'key1';
         var value1 = 'value1';
         var key2 = 'key2';
